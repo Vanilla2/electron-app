@@ -11,7 +11,7 @@
 "electron:serve": "npm start & npm run electron:start"
 </pre>
 
-4. add .env and add the following line
+4. add .env and add the following lines
 
 <pre>
 PORT=9000
