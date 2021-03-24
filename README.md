@@ -1,8 +1,8 @@
 # My first electron website
 
-1. npx create-react-app name --template typescrit
+1. <pre> npx create-react-app name --template typescrit </pre>
 
-2. npm install electron
+2. <pre> npm install electron </pre>
 
 3. add description, licence, and the following to package.json scripts:
 
