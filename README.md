@@ -12,15 +12,15 @@
 
 4. add .env and add the following line
 
-<code>
+<pre><code>
 PORT=9000
 BROWSER=none
-</code>
+</code></pre>
 
 5. to start the website use:
 
-<code>
+<pre><code>
 npm run electron:serve
-</code>
+</code></pre>
 
 NOTE: You have to wait a moment for the react to be served and then the app will work
