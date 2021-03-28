@@ -1,27 +1,33 @@
 # My first electron website
-1. npx create-react-app name --template typescrit
 
-2. npm install electron --save-dev
+1. Initialize the react app:
 
-3. add description, licence, author and the following to package.json scripts:
+<pre> npx create-react-app name --template typescrit </pre>
 
-<code>
-"electron:start": "export DEV=TRUE && electron .",
+2. Install electron:
+
+<pre> npm install electron </pre>
+
+3. add description, licence, and the following to package.json scripts:
+
+<pre>
+"electron:start": "electron .",
 "electron:serve": "npm start & npm run electron:start"
-</code>
+</pre>
 
-4. add .env and add the following line
+4. add .env and add the following lines
 
-<pre><code>
+<pre>
 PORT=9000
 BROWSER=none
-</code></pre>
+</pre>
 
 5. to start the website use:
 
-<pre><code>
-npm run electron:serve
-</code></pre>
+<pre>npm run electron:serve</pre>
+
+NOTE: You have to wait a moment for the react to be served and then the app will work
+
 
 # Production build
 1. npm install electron-builder --save-dev
