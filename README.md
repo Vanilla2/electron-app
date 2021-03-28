@@ -6,7 +6,7 @@
 
 2. Install electron:
 
-<pre> npm install electron </pre>
+<pre> npm install electron --save-dev </pre>
 
 3. add description, licence, and the following to package.json scripts:
 
