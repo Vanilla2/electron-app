@@ -30,17 +30,17 @@ NOTE: You have to wait a moment for the react to be served and then the app will
 
 
 # Production build
-1. npm install electron-builder --save-dev
+1. Install electron-builder:
 
-2. Add scripts to package.json
+<pre>npm install electron-builder --save-dev</pre>
 
-<code>
-"dist": "npm run build && electron-builder -c.extraMetadata.main=src/main/main.js"
-</code>
+2. Add scripts to package.json:
 
-3. Add the build configuration
+<pre>"dist": "npm run build && electron-builder -c.extraMetadata.main=src/main/main.js"</pre>
 
-<code>
+3. Add the build configuration:
+
+<pre>
 "build": {
     "appId": "com.native",
     "productName": "Electron test app",
@@ -54,4 +54,4 @@ NOTE: You have to wait a moment for the react to be served and then the app will
         "node_modules/**/*"
     ]
 }
-</code>
+</pre>
