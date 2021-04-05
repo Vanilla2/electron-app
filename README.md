@@ -11,7 +11,7 @@
 3. add description, licence, and the following to package.json scripts:
 
 <pre>
-"electron:start": "electron .",
+"electron:start": "export DEV=TRUE && electron .",
 "electron:serve": "npm start & npm run electron:start"
 </pre>
 
