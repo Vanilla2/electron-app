@@ -8,7 +8,7 @@
 
 <pre> npm install electron --save-dev </pre>
 
-3. add description, licence, and the following to package.json scripts:
+3. add description, licence, main process file, and the following to package.json scripts:
 
 <pre>
 "electron:start": "export DEV=TRUE && electron .",
