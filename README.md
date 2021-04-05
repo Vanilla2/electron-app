@@ -36,7 +36,7 @@ NOTE: You have to wait a moment for the react to be served and then the app will
 
 2. Add scripts to package.json:
 
-<pre>"dist": "npm run build && electron-builder -c.extraMetadata.main=src/main/main.js"</pre>
+<pre>"dist": "npm run build && electron-builder"</pre>
 
 3. Add the build configuration:
 
@@ -47,11 +47,20 @@ NOTE: You have to wait a moment for the react to be served and then the app will
     "linux": {
         "target": "AppImage"
     },
+    "windows": {
+        "target": "NSIS",
+    },
+    "macos": {
+        "target": "dmg",
+    }
     "files": [
         "build/**/*",
         "src/**/*",
         "package.json",
         "node_modules/**/*"
-    ]
+    ],
+    "extraMetadata": {
+      "main": "src/main/main.js"
+    }
 }
 </pre>
